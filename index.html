@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+   <title>Kaushik Samanta</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+   <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">-->
+   <link href="app/css/style.css" rel="stylesheet" type="text/css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>-->
+</head>
+<body ng-app="Resume" ng-controller="DemoController">
+<div>
+   <header>
+      <h1>Kaushik Samanta</h1>
+      <h2>Developer eh? Go through this website using the ever classic command-line. Else scroll down.</h2>
+   </header>
+   <nav>
+      <ul>
+         <li>
+            <a 	href="#" title="left"
+                  ng-class="{active:transition=='slide-left'}" 		ng-click="left()">
+               About
+            </a>
+         </li>
+         <li>
+            <a 	href="#" title="right"
+                  ng-class="{'active':transition=='slide-right'}" 	ng-click="right()">
+               Right
+            </a>
+         </li>
+         <li>
+            <a 	href="#" title="top"
+                  ng-class="{'active':transition=='slide-top'}" 		ng-click="top()">
+               Top
+            </a>
+         </li>
+         <li>
+            <a 	href="#" title="bottom"
+                  ng-class="{'active':transition=='slide-bottom'}" 	ng-click="bottom()">
+               Bottom
+            </a>
+         </li>
+      </ul>
+   </nav>
+
+   <div class="content">
+      <div ui-view ng-class="transition">
+
+      </div>
+   </div>
+</div>
+
+<script src="http://code.angularjs.org/1.2.10/angular.min.js"></script>
+<script src="http://code.angularjs.org/1.2.11/angular-animate.min.js"></script>
+<script src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="app/js/particles.min.js"></script>
+<script src="app/js/main.js"></script>
+</body>
+</html>
