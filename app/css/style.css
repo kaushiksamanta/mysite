@@ -47,10 +47,12 @@ nav ul li a {
 }
 nav ul li a.active {
     border: 3px solid #404D5B;
+    cursor: pointer;
 }
 nav ul li a:hover {
     background: #404D5B;
     color: #F9F7F6;
+    cursor: pointer;
 }
 .content {
     width: 100%;

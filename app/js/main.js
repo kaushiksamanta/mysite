@@ -31,11 +31,6 @@ angular
     .controller('DemoController', function( $scope, $window, $state ,$timeout)
     {
         $scope.transition = 'slide-left';
-        $scope.tabs = ['tab1', 'tab2', 'tab3', 'tab4'];
-        $scope.currentIndex = -1;
-        $scope.maxIndex = $scope.tabs.length;
-        $scope.left = false;
-
         $state.go('tab1');
         $scope.left = function()
         {
