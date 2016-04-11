@@ -56,7 +56,7 @@ nav ul li a:hover {
 }
 .content {
     width: 100%;
-    height: 60%;
+    height: inherit;
     position: relative;
     margin: 20px auto;
     overflow: hidden;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 .content .tab {
     overflow: hidden;
     padding: 1em 4em;
-    height: 100%;
+    height: inherit;
     font-size: 2em;
     line-height: 1.4;
 }
@@ -81,7 +81,8 @@ nav ul li a:hover {
     color: #404D5B;
 }
 .content .tab4 {
-    background: #F9F7F6;
+    background: #28D3A4;
+    color: white;
 }
 .slide-left.ng-enter,
 .slide-left.ng-leave,
