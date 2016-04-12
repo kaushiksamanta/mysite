@@ -56,5 +56,4 @@ angular
             $state.go('tab4');
         };
 
-    })
-;
+    });
