@@ -2,7 +2,7 @@
  * Created by Kaushik Samanta on 10-04-2016.
  */
 angular
-    .module('Resume', ['ui.router', 'ngAnimate'])
+    .module('Resume', ['ui.router', 'ngAnimate','anim-in-out'])
     .config(function($stateProvider, $urlRouterProvider)
     {
         $urlRouterProvider.otherwise('/page/tab1');
@@ -34,25 +34,25 @@ angular
         $state.go('tab1');
         $scope.left = function()
         {
-            $scope.transition = 'slide-left';
+            $scope.transition = 'anim-slide-left';
             $state.go('tab1');
         };
 
         $scope.right = function()
         {
-            $scope.transition = 'slide-right';
+            $scope.transition = 'anim-slide-right';
             $state.go('tab2');
         };
 
         $scope.top = function()
         {
-            $scope.transition = 'slide-top';
+            $scope.transition = 'anim-slide-left';
             $state.go('tab3');
         };
 
         $scope.bottom = function()
         {
-            $scope.transition = 'slide-bottom';
+            $scope.transition = 'anim-slide-right';
             $state.go('tab4');
         };
 
