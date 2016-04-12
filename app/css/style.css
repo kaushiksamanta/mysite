@@ -1,6 +1,6 @@
 html,
 body {
-    background: #C6F51F;
+    background: #18CEE0;
     font-family: 'Open Sans';
     font-size: 12px;
     line-height: 1.25;
@@ -70,18 +70,18 @@ nav ul li a:hover {
 }
 .content .tab1 {
     background: #34495E;
-    color: #B4B4B4;
+    color: #FBF6F6;
 }
 .content .tab2 {
-    background: #E74C3C;
+    background: #237C9E;
     color: #fff;
 }
 .content .tab3 {
-    background: #bbc3c3;
+    background: #DAF34E;
     color: #404D5B;
 }
 .content .tab4 {
-    background: #28D3A4;
+    background: #10DEA5;
     color: white;
 }
 .slide-left.ng-enter,
